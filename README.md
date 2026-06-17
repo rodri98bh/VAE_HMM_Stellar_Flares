@@ -1,1 +1,59 @@
-# VAE_HMM_Stellar_Flares
+# Variational Autoencoder + hidden Markov model for Stellar Flare Detection
+
+This repository provides the codebase required to run the full VAE+HMM framework presented in the following paper:
+
+Herrera, R., Leos-Barajas, V., Eadie, G., Semenova, E., & Davenport, J. (2026). Scalable Bayesian Additive Models for Stellar Flare Detection via Amortized Gaussian Process Inference and Hidden Markov Models.
+
+# PriorCVAE in JAX
+
+The main VAE structure is based on the following two papers:
+
+1. Elizaveta Semenova, Yidan Xu, Adam Howes, Theo Rashid, Samir Bhatt, Swapnil Mishra, Seth Flaxman["PriorVAE: encoding spatial priors with variational autoencoders for small-area estimation."](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2022.0094) Journal of the Royal Society Interface 19.191 (2022): 20220094. Original code is avilable [here](https://github.com/elizavetasemenova/PriorVAE). 
+2. Elizaveta Semenova, Prakhar Verma, Max Cairney-Leeming, Arno Solin, Samir Bhatt, Seth Flaxman ["PriorCVAE: scalable MCMC parameter inference with Bayesian deep generative modelling."](https://arxiv.org/abs/2304.04307) arXiv preprint arXiv:2304.04307 (2023). Original code is avilable [here](https://github.com/elizavetasemenova/PriorcVAE).
+
+## Environment
+
+We recommend setting up a [conda](https://docs.conda.io/projects/conda/en/latest/index.html) environment.
+```shell
+conda create -n prior_cvae -c conda-forge python==3.10.1
+conda activate prior_cvae
+```
+
+Within the virtual environment, install the dependencies by running
+```shell
+pip install -r requirements.txt
+```
+
+**Note:** The code has been tested with `Python 3.10.1`. There is a known issue with `Python 3.10.0` related to loading a saved model  because of the [bug](https://bugs.python.org/issue45416) which is resolved in `Python 3.10.1`. 
+
+## Install the package
+
+```shell
+python setup.py install
+```
+
+To install in the develop mode:
+```shell
+python setup.py develop
+```
+
+## To runs tests
+
+First install the test-requirements by running the following command from within the conda environment:
+```shell
+pip install -r requirements-test.txt
+```
+Then, run the following command:
+```shell
+pytest -v tests/
+```
+
+## Contact
+
+For any questions or correspondence regarding the main paper, please contact [rodribr98@hotmail.com](mailto:rodribr98@hotmail.com).
+
+For specific inquiries related to the VAE architecture, please contact [elizaveta.p.semenova@gmail.com](mailto:elizaveta.p.semenova@gmail.com).
+
+### License
+
+This software is provided under the [MIT license](LICENSE).
