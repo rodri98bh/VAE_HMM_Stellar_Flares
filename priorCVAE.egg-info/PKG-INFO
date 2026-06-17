@@ -1,9 +1,0 @@
-Metadata-Version: 2.4
-Name: priorCVAE
-Version: 1.0
-Summary: Prior CVAE
-Author: MLGH
-License-File: LICENSE
-Dynamic: author
-Dynamic: license-file
-Dynamic: summary
