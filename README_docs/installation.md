@@ -2,8 +2,7 @@
 
 This repository provides the codebase required to run the full VAE+HMM framework presented in the following paper:
 
-Herrera, R., Leos-Barajas, V., Eadie, G., & Semenova, E. (Year). Scalable Bayesian Additive Models for Stellar Flare Detection via Amortized Gaussian Process Inference and Hidden Markov Models.
-
+Herrera, R., Leos-Barajas, V., Eadie, G., Semenova, E., & Davenport, J. (2026). Scalable Bayesian Additive Models for Stellar Flare Detection via Amortized Gaussian Process Inference and Hidden Markov Models.
 # PriorCVAE in JAX
 
 The main VAE structure is based on the following two papers:
